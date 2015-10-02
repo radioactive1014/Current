@@ -1054,20 +1054,6 @@ limits
 float.h
 -
 
-/home/intelligentrobotics/rokon/src/utils/src/ClippedGaussianSampling.cpp
-ClippedGaussianSampling.h
-/home/intelligentrobotics/rokon/src/utils/src/ClippedGaussianSampling.h
-math.h
--
-vector
--
-Debug.h
-/home/intelligentrobotics/rokon/src/utils/src/Debug.h
-stdlib.h
--
-iostream
--
-
 /home/intelligentrobotics/rokon/src/utils/src/DiagonalGMM.cpp
 DiagonalGMM.h
 /home/intelligentrobotics/rokon/src/utils/src/DiagonalGMM.h

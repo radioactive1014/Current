@@ -187,7 +187,7 @@ namespace AaltoGames
 	void DiagonalGMM::sampleWithLimits( Eigen::VectorXf &dst, const Eigen::VectorXf &minValues, const Eigen::VectorXf &maxValues  )
 	{
 
-		
+		//printf("sample with limits \n");
 		int idx=sampleComponent();
 		//printf("sampleWithLimits selected component %d\n",idx);
 		if (dst.rows()!=nDimensions)
@@ -200,7 +200,7 @@ namespace AaltoGames
 
 	void DiagonalGMM::sampleWithLimits( Eigen::Map<Eigen::VectorXf> &dst, const Eigen::VectorXf &minValues, const Eigen::VectorXf &maxValues )
 	{
-
+		//printf("sample with limits \n");
 		int idx=sampleComponent();
 		//printf("sampleWithLimits selected component %d\n",idx);
 		if (dst.rows()!=nDimensions)
@@ -209,8 +209,9 @@ namespace AaltoGames
 		{
 			
 			//dst[d]=randGaussianClipped(mean[idx][d],std[idx][d],minValues[d],maxValues[d]);
+			//printf(" Sample with limit for %d-- mean %f, stdv %f, min %f, max %f \n",d,mean[idx][d],std[idx][d],minValues[d],maxValues[d] );
 		
-			dst[d]=randGaussianClipped(mean[idx][d],std[idx][0],minValues[d],maxValues[d]);
+			dst[d]=randGaussianClipped(mean[idx][d],std[idx][d],minValues[d],maxValues[d]);
 		}
 	}
 

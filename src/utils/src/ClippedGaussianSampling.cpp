@@ -108,35 +108,36 @@ namespace AaltoGames
 	float ClippedGaussianSampler::sample(float mean, float stdev, float minValue, float maxValue ){
 		//If the lookup table is empty, populate it.
 		
-		
+		//printf("clipped 1\n");
 		if (standardCdfTable.empty()){
 			computeCdfTable();
+			//printf("2\n");
 		}
 
 
 		//Map the values to be used with standard normal distribution
 		float minValStd = nonstandardToStandard(minValue,mean,stdev);
 		float maxValStd = nonstandardToStandard(maxValue,mean,stdev);
-
+		//printf("3\n");
 
 		
 		//Find the indices of the places corresponding to the minimum and maximum allowed value
 		int minPlace = (int)ceil( (minValStd - lowLim)/delta );
 		int maxPlace = (int)floor( (maxValStd - lowLim)/delta );
 
-
+		//printf("4\n");
 		
 		
 		int ee = std::min((int)(standardCdfTable.size()-1),maxPlace);
 		int pp = standardCdfTable.size();
 	
-
+		//printf("5\n");
 
 		//Find the standard normal distribution cdf values corresponding to the  minimum and maximum allowed value
 		minValStd = standardCdfTable[std::max(0,minPlace)]; 
 		maxValStd = standardCdfTable[std::min((int)(standardCdfTable.size()-1),maxPlace)];
 
-		
+		//printf("6\n");
 
 		float transRand, position;
 
@@ -144,7 +145,7 @@ namespace AaltoGames
 
 		//Sample a uniformly distributed random number from interval [0,1]
 		transRand = ((float) rand() / (RAND_MAX));
-
+		//printf("7\n");
 		//Scale the random number appropriately
 		transRand = (maxValStd - minValStd)*transRand + minValStd;
 
@@ -156,7 +157,7 @@ namespace AaltoGames
 		transRand = standardToNonstandard(position,mean,stdev);
 
 		transRand = clamp(transRand,minValue,maxValue);
-	
+		//printf("8\n");
 
 		////Position will correspond to the sampled value in standard normal distribution
 		//float position = lowLim;
@@ -174,10 +175,11 @@ namespace AaltoGames
 		//Test that the number fullfils the requirements
 		AALTO_ASSERT1(transRand >= minValue);
 		AALTO_ASSERT1(transRand <= maxValue);
-
+		//printf(" clipped 9\n");
 		;
 		//Return the value
 		return transRand;
+
 
 	}
 
@@ -185,7 +187,8 @@ namespace AaltoGames
 	float randGaussianClipped( float mean, float stdev, float minValue, float maxValue )
 	{
 	
-		
+		//printf("rand gaussian \n");
+		//printf("mean %f, stadv %f, minvalue %f, maxvalue %f \n", mean, stdev,minValue, maxValue);
 		return s_sampler.sample(mean,stdev,minValue,maxValue);
 	}
 

@@ -150,6 +150,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+unit/CMakeFiles/boost_first.dir/rule:
+	cd /home/intelligentrobotics/rokon/build && $(MAKE) -f CMakeFiles/Makefile2 unit/CMakeFiles/boost_first.dir/rule
+.PHONY : unit/CMakeFiles/boost_first.dir/rule
+
+# Convenience name for target.
+boost_first: unit/CMakeFiles/boost_first.dir/rule
+.PHONY : boost_first
+
+# fast build rule for target.
+boost_first/fast:
+	cd /home/intelligentrobotics/rokon/build && $(MAKE) -f unit/CMakeFiles/boost_first.dir/build.make unit/CMakeFiles/boost_first.dir/build
+.PHONY : boost_first/fast
+
+# Convenience name for target.
 unit/CMakeFiles/test1.dir/rule:
 	cd /home/intelligentrobotics/rokon/build && $(MAKE) -f CMakeFiles/Makefile2 unit/CMakeFiles/test1.dir/rule
 .PHONY : unit/CMakeFiles/test1.dir/rule
@@ -414,6 +428,30 @@ vel_double: unit/CMakeFiles/vel_double.dir/rule
 vel_double/fast:
 	cd /home/intelligentrobotics/rokon/build && $(MAKE) -f unit/CMakeFiles/vel_double.dir/build.make unit/CMakeFiles/vel_double.dir/build
 .PHONY : vel_double/fast
+
+boost_first.o: boost_first.cpp.o
+.PHONY : boost_first.o
+
+# target to build an object file
+boost_first.cpp.o:
+	cd /home/intelligentrobotics/rokon/build && $(MAKE) -f unit/CMakeFiles/boost_first.dir/build.make unit/CMakeFiles/boost_first.dir/boost_first.cpp.o
+.PHONY : boost_first.cpp.o
+
+boost_first.i: boost_first.cpp.i
+.PHONY : boost_first.i
+
+# target to preprocess a source file
+boost_first.cpp.i:
+	cd /home/intelligentrobotics/rokon/build && $(MAKE) -f unit/CMakeFiles/boost_first.dir/build.make unit/CMakeFiles/boost_first.dir/boost_first.cpp.i
+.PHONY : boost_first.cpp.i
+
+boost_first.s: boost_first.cpp.s
+.PHONY : boost_first.s
+
+# target to generate assembly for a file
+boost_first.cpp.s:
+	cd /home/intelligentrobotics/rokon/build && $(MAKE) -f unit/CMakeFiles/boost_first.dir/build.make unit/CMakeFiles/boost_first.dir/boost_first.cpp.s
+.PHONY : boost_first.cpp.s
 
 pide.o: pide.cpp.o
 .PHONY : pide.o
@@ -709,6 +747,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... boost_first"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -735,6 +774,9 @@ help:
 	@echo "... vel"
 	@echo "... vel_check"
 	@echo "... vel_double"
+	@echo "... boost_first.o"
+	@echo "... boost_first.i"
+	@echo "... boost_first.s"
 	@echo "... pide.o"
 	@echo "... pide.i"
 	@echo "... pide.s"

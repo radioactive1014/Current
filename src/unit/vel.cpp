@@ -145,7 +145,7 @@ saveOdeState(0);
 
 
 //run the algorithm for 90 steps (3 seconds)
-	for (int n=0; n<5000; n++){
+	for (int n=0; n<50; n++){
 		printf("%d\n",n);
 //init all trajectories to the master state
 		for (int i=0; i<nSamples; i++)

@@ -58,17 +58,17 @@ float timeStep=1.0f/30.0f;
 ControlPBP pbp;
 int   nTimeSteps=15;		
 const int nStateDimensions=2;
-const int nControlDimensions=1;
-float minControl=-2;	//lower sampling bound
-float maxControl=2;		//upper sampling bound
-float controlMean=0;	//we're using torque as the control, makes sense to have zero mean
+const int nControlDimensions=2;
+float minControl[2]={-2,-2};	//lower sampling bound
+float maxControl[2]={2,2};		//upper sampling bound
+float controlMean[2]={0,0};	//we're using torque as the control, makes sense to have zero mean
 //Square root of the diagonal elements of C_u in the paper, i.e., stdev of a Gaussian prior for control.
 //Note that the optimizer interface does not have the C_u as a parameter, and instead uses meand and stdev arrays as parameters.
 //The 3D character tests compute the C_u on the Unity side to reduce the number of effective parameters, and then compute the arrays based on it as described to correspond to the products \sigma_0 C_u etc.
 float C=10;
-float controlStd=0.8f*C;	//sqrt(\sigma_{0}^2 C_u) of the paper (we're not explicitly specifying C_u as u is a scalar here). In effect, a "tolerance" for torque minimization in this test
-float controlDiffStd=100.0f*C;	//sqrt(\sigma_{1}^2 C_u) in the pape. In effect, a "tolerance" for angular jerk minimization in this test
-float controlDiffDiffStd=1000.0f*C; //sqrt(\sigma_{2}^2 C_u) in the paper. A large value to have no effect in this test.
+float controlStd[2]={0.8f*C,0.8f*C};	//sqrt(\sigma_{0}^2 C_u) of the paper (we're not explicitly specifying C_u as u is a scalar here). In effect, a "tolerance" for torque minimization in this test
+float controlDiffStd[2]={100.0f*C,100.0f*C};	//sqrt(\sigma_{1}^2 C_u) in the pape. In effect, a "tolerance" for angular jerk minimization in this test
+float controlDiffDiffStd[2]={1000.0f*C,1000.0f*C}; //sqrt(\sigma_{2}^2 C_u) in the paper. A large value to have no effect in this test.
 float mutationScale=0.25f;		//\sigma_m in the paper
 
 
@@ -470,7 +470,7 @@ int main(int argc, char **argv)
 
 
     //initialize the optimizer
-	pbp.init(nSamples,nTimeSteps,nStateDimensions,nControlDimensions,&minControl,&maxControl,&controlMean,&controlStd,&controlDiffStd,&controlDiffDiffStd,mutationScale,NULL);
+	pbp.init(nSamples,nTimeSteps,nStateDimensions,nControlDimensions,minControl,maxControl,controlMean,controlStd,controlDiffStd,controlDiffDiffStd,mutationScale,NULL);
 
 	//set further params: portion of "no prior" samples, resampling threshold, whether to use the backwards smoothing pass, and the regularization of the smoothing pass
 	pbp.setParams(0.1f,0.5f,true,0.001f);

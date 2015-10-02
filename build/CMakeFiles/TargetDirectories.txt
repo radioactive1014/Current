@@ -8,6 +8,7 @@
 /home/intelligentrobotics/rokon/build/app/CMakeFiles/app_generate_messages_py.dir
 /home/intelligentrobotics/rokon/build/app/CMakeFiles/app_genlisp.dir
 /home/intelligentrobotics/rokon/build/app/CMakeFiles/app_genpy.dir
+/home/intelligentrobotics/rokon/build/unit/CMakeFiles/boost_first.dir
 /home/intelligentrobotics/rokon/build/app/CMakeFiles/bup.dir
 /home/intelligentrobotics/rokon/build/camera/CMakeFiles/camera.dir
 /home/intelligentrobotics/rokon/build/camera/CMakeFiles/check.dir

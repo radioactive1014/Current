@@ -930,6 +930,19 @@ main/fast:
 .PHONY : main/fast
 
 #=============================================================================
+# Target rules for targets named boost_first
+
+# Build rule for target.
+boost_first: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 boost_first
+.PHONY : boost_first
+
+# fast build rule for target.
+boost_first/fast:
+	$(MAKE) -f unit/CMakeFiles/boost_first.dir/build.make unit/CMakeFiles/boost_first.dir/build
+.PHONY : boost_first/fast
+
+#=============================================================================
 # Target rules for targets named test1
 
 # Build rule for target.
@@ -1262,6 +1275,7 @@ help:
 	@echo "... fix_test"
 	@echo "... _catkin_empty_exported_target"
 	@echo "... main"
+	@echo "... boost_first"
 	@echo "... test1"
 	@echo "... test_p"
 	@echo "... unit"

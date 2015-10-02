@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 2.8)
 
 # Declare the name of the CMake Project
 project(unit)
-set(CMAKE_BUILD_TYPE Release)
+set(DCMAKE_BUILD_TYPE=Release)
 set(CMAKE_CXX_FLAGS "${CMAKE_C_FLAGS} -std=c++0x  -fmessage-length=0 ")
 
 
@@ -14,6 +14,7 @@ find_package(roscpp REQUIRED)
 find_package(utils REQUIRED)
 find_package(main REQUIRED)
 find_package(catkin REQUIRED rospy std_msgs genmsg  message_generation)
+FIND_PACKAGE( Boost 1.40 COMPONENTS program_options REQUIRED )
 
 #generate_messages(DEPENDENCIES std_msgs)
 
@@ -44,6 +45,7 @@ include_directories(include ${roscpp_INCLUDE_DIRS}  ${utils_INCLUDE_DIRS} ${main
 include_directories ("${PROJECT_SOURCE_DIR}/eigen")
 include_directories("/home/spacemaster09/ode-0.12/ode/src/joints")
 include_directories("/usr/local/include")
+INCLUDE_DIRECTORIES( ${Boost_INCLUDE_DIR} )
 
 link_directories("/usr/local/lib")
 
@@ -61,6 +63,7 @@ add_executable(unit_single unit_single.cpp )
 add_executable(unit_amotor unit_amotor.cpp )
 add_executable(unit_obs unit_amotor_obs.cpp )
 add_executable(unit_sim unit_similarity_test.cpp )
+add_executable(boost_first boost_first.cpp )
 
 #add_executable(unit_corrected unit_double_corrected.cpp )
 
@@ -79,6 +82,8 @@ target_link_libraries(unit_single ${roscpp_LIBRARIES} utils ode main)
 target_link_libraries(unit_amotor ${roscpp_LIBRARIES} utils ode main)
 target_link_libraries(unit_obs ${roscpp_LIBRARIES} utils ode main)
 target_link_libraries(unit_sim ${roscpp_LIBRARIES} utils ode main)
+
+target_link_libraries(boost_first ${roscpp_LIBRARIES} ${Boost_LIBRARIES} utils ode main)
 
 #target_link_libraries(unit_corrected ${roscpp_LIBRARIES} utils ode main)
 

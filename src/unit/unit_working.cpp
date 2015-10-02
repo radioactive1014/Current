@@ -57,7 +57,7 @@ std_msgs::Float32 msg;
     ControlPBP pbp;
 	int nTimeSteps=10;		
 	const int nStateDimensions=2;
-	const int nControlDimensions=1;
+	const int nControlDimensions=2;
 	float minControl=-2;	//lower sampling bound
 	float maxControl=2;		//upper sampling bound
 	float controlMean=0;	//we're using torque as the control, makes sense to have zero mean

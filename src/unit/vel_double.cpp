@@ -144,18 +144,18 @@ int main(int argc, char **argv)
 	//const float PI=3.1416f;	
 	const int nStateDimensions=2; 
 	const int nControlDimensions=2;
-	float minControl=-2;	//lower sampling bound
-	float maxControl=2;		//upper sampling bound
-	float controlMean=0;	//we're using torque as the control, makes sense to have zero mean
+	float minControl[2]={-2,-2};	//lower sampling bound
+	float maxControl[2]={2,2};		//upper sampling bound
+	float controlMean[2]={0,0};	//we're using torque as the control, makes sense to have zero mean
 	//Square root of the diagonal elements of C_u in the paper, i.e., stdev of a Gaussian prior for control.
 	//Note that the optimizer interface does not have the C_u as a parameter, and instead uses meand and stdev arrays as parameters. 
 	//The 3D character tests compute the C_u on the Unity side to reduce the number of effective parameters, and then compute the arrays based on it as described to correspond to the products \sigma_0 C_u etc.
 	float C=10;	
-	float controlStd=1.0f*C;	//sqrt(\sigma_{0}^2 C_u) of the paper (we're not explicitly specifying C_u as u is a scalar here). In effect, a "tolerance" for torque minimization in this test
-	float controlDiffStd=100.0f*C;	//sqrt(\sigma_{1}^2 C_u) in the pape. In effect, a "tolerance" for angular jerk minimization in this test
-	float controlDiffDiffStd=100.0f*C; //sqrt(\sigma_{2}^2 C_u) in the paper. A large value to have no effect in this test.
+	float controlStd[2]={1.0f*C,1.0f*C};	//sqrt(\sigma_{0}^2 C_u) of the paper (we're not explicitly specifying C_u as u is a scalar here). In effect, a "tolerance" for torque minimization in this test
+	float controlDiffStd[2]={100.0f*C,100.0f*C};	//sqrt(\sigma_{1}^2 C_u) in the pape. In effect, a "tolerance" for angular jerk minimization in this test
+	float controlDiffDiffStd[2]={100.0f*C,100.0f*C}; //sqrt(\sigma_{2}^2 C_u) in the paper. A large value to have no effect in this test.
 	float mutationScale=0.25f;		//\sigma_m in the paper
-	pbp.init(nSamples,nTimeSteps,nStateDimensions,nControlDimensions,&minControl,&maxControl,&controlMean,&controlStd,&controlDiffStd,&controlDiffDiffStd,mutationScale,NULL);
+	pbp.init(nSamples,nTimeSteps,nStateDimensions,nControlDimensions,minControl,maxControl,controlMean,controlStd,controlDiffStd,controlDiffDiffStd,mutationScale,NULL);
 
 	//set further params: portion of "no prior" samples, resampling threshold, whether to use the backwards smoothing pass, and the regularization of the smoothing pass
 	pbp.setParams(0.1f,0.5f,true,0.001f);  
@@ -165,7 +165,7 @@ int main(int argc, char **argv)
 //run the algorithm for 90 steps (3 seconds)
 	for (int n=0; n<5000; n++)
 	{
-		printf("sss %d\n",n);
+		//printf("sss %d\n",n);
 
 			for (int i=0; i<nSamples; i++)
 			{
@@ -207,9 +207,9 @@ int main(int argc, char **argv)
 						for (int i=0; i<nSamples; i++)
 					{
 						//get control from C-PBP
-						float control, control1;
-						pbp.getControl(i,&control);
-						pbp.getControl(i,&control1);
+						float control[2];
+						pbp.getControl(i,control);
+						//pbp.getControl(i,&control1);
 
 						//printf("k=%i",k);
 						//printf("i=%d \n",i);
@@ -228,20 +228,20 @@ int main(int argc, char **argv)
 
 						dReal MaxForce = dInfinity;
 						odeJointSetHingeParam(joint2,dParamFMax,dInfinity); 
-						odeJointSetHingeParam(joint2,dParamVel,control  );
+						odeJointSetHingeParam(joint2,dParamVel,control[0]  );
 
 						odeJointSetHingeParam(joint1,dParamFMax,dInfinity); 
-						odeJointSetHingeParam(joint1,dParamVel,control1  );
+						odeJointSetHingeParam(joint1,dParamVel,control[1] );
 						stepOde(1);
 
 						pos = odeBodyGetPosition(body1);
 						aVel=odeJointGetHingeAngle(joint2);
 						const dReal *pos = odeBodyGetPosition(body1);
 						float aVel=odeJointGetHingeAngle(joint2);
-						float cost=squared((-.05-pos[0])*100.0f)+squared((pos[1])*0.5f);//+ squared(aVel*10.5f);+ squared(control* 1000.0f)+ squared(control1*900.0f);
+						float cost=squared((-.05-pos[0])*72.0f)+squared((pos[1])*0.5f);//+ squared(aVel*10.5f);+ squared(control* 1000.0f)+ squared(control1*900.0f);
 
 						float stateVector[2]={pos[0],pos[1]};
-						float cont[2]= {control,control1};
+						float cont[2]= {control[0],control[1]};
 						pbp.updateResults(i,cont,stateVector,cost);
 				
 
@@ -264,14 +264,14 @@ int main(int argc, char **argv)
 		float control[2];
 		pbp.getBestControl(0,control);
 		float cost=(float)pbp.getSquaredCost();
-		printf("Cost %f \n",cost);
+		//printf("Cost %f \n",cost);
 
 		setCurrentOdeContext(0);
 		restoreOdeState(0);
 
 		pos = odeBodyGetPosition(body1);
 		aVel=odeJointGetHingeAngle(joint2);
-		printf("best control 0 :%f control 1 %f \n ", control[0], control[1]);
+		//printf("best control 0 :%f control 1 %f \n ", control[0], control[1]);
 
 		 dReal MaxForce = dInfinity;
 		odeJointSetHingeParam(joint2,dParamFMax,dInfinity); 
@@ -286,7 +286,7 @@ int main(int argc, char **argv)
 
 		pos = odeBodyGetPosition(body1);
 		aVel=odeJointGetHingeAngle(joint2);
-		//printf("FINAL Posx %1.3f,posy = %f  avel %1.3f, cost=%1.3f \n",pos[0],pos[1],aVel*180/3.1416,cost);
+		printf("FINAL Posx %1.3f,posy = %f  avel %1.3f, cost=%1.3f \n",pos[0],pos[1],aVel*180/3.1416,cost);
 
 
 

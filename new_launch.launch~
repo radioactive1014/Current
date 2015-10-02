@@ -1,6 +1,6 @@
 <launch>
-<node name="n" pkg="unit" type="unit_double" output="screen" launch-prefix="xterm -e gdb -g --args" />
-<node name="ndfdjfkl" pkg="app" type="pbp_double" output="screen" launch-prefix="xterm -e gdb -g --args"  />
+<node name="n" pkg="unit" type="unit_double" output="screen" launch-prefix="xterm -e gdb  --args" />
+<node name="ndfdjfkl" pkg="app" type="pbp_double" output="screen" launch-prefix="xterm -e gdb  --args"  />
 
 
 

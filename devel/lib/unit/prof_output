@@ -1,0 +1,773 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00   240000     0.00     0.00  double AaltoGames::squared<double>(double)
+  0.00      0.00     0.00   240000     0.00     0.00  float AaltoGames::squared<float>(float)
+  0.00      0.00     0.00   120000     0.00     0.00  std::abs(float)
+  0.00      0.00     0.00    56241     0.00     0.00  Eigen::internal::aligned_free(void*)
+  0.00      0.00     0.00    53241     0.00     0.00  void Eigen::internal::conditional_aligned_free<true>(void*)
+  0.00      0.00     0.00    22008     0.00     0.00  Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 0>::DenseCoeffsBase()
+  0.00      0.00     0.00    22008     0.00     0.00  Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 1>::DenseCoeffsBase()
+  0.00      0.00     0.00    22008     0.00     0.00  Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 3>::DenseCoeffsBase()
+  0.00      0.00     0.00    22008     0.00     0.00  Eigen::internal::special_scalar_op_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, float, float, false>::special_scalar_op_base()
+  0.00      0.00     0.00    22008     0.00     0.00  Eigen::DenseBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::DenseBase()
+  0.00      0.00     0.00    22008     0.00     0.00  Eigen::EigenBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::EigenBase()
+  0.00      0.00     0.00    22004     0.00     0.00  Eigen::DenseStorage<float, -1, -1, 1, 0>::~DenseStorage()
+  0.00      0.00     0.00    22004     0.00     0.00  Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::~PlainObjectBase()
+  0.00      0.00     0.00    22004     0.00     0.00  void Eigen::internal::conditional_aligned_delete_auto<float, true>(float*, unsigned long)
+  0.00      0.00     0.00    14150     0.00     0.00  Eigen::MatrixBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::MatrixBase()
+  0.00      0.00     0.00    14150     0.00     0.00  Eigen::DenseStorage<float, -1, -1, 1, 0>::DenseStorage()
+  0.00      0.00     0.00    14150     0.00     0.00  Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::_check_template_params()
+  0.00      0.00     0.00    14150     0.00     0.00  Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::PlainObjectBase()
+  0.00      0.00     0.00    12637     0.00     0.00  Eigen::Matrix<float, -1, 1, 0, -1, 1>::~Matrix()
+  0.00      0.00     0.00     2511     0.00     0.00  AaltoGames::ControlPBP::MarginalSample::~MarginalSample()
+  0.00      0.00     0.00     2511     0.00     0.00  AaltoGames::ControlPBP::MarginalSample* std::__addressof<AaltoGames::ControlPBP::MarginalSample>(AaltoGames::ControlPBP::MarginalSample&)
+  0.00      0.00     0.00     2511     0.00     0.00  void std::_Destroy<AaltoGames::ControlPBP::MarginalSample>(AaltoGames::ControlPBP::MarginalSample*)
+  0.00      0.00     0.00     1582     0.00     0.00  Eigen::DenseStorage<double, -1, -1, 1, 0>::~DenseStorage()
+  0.00      0.00     0.00     1582     0.00     0.00  Eigen::PlainObjectBase<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::~PlainObjectBase()
+  0.00      0.00     0.00     1582     0.00     0.00  void Eigen::internal::conditional_aligned_delete_auto<double, true>(double*, unsigned long)
+  0.00      0.00     0.00       82     0.00     0.00  Eigen::Matrix<float, -1, 1, 0, -1, 1>* std::__addressof<Eigen::Matrix<float, -1, 1, 0, -1, 1> >(Eigen::Matrix<float, -1, 1, 0, -1, 1>&)
+  0.00      0.00     0.00       82     0.00     0.00  void std::_Destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1> >(Eigen::Matrix<float, -1, 1, 0, -1, 1>*)
+  0.00      0.00     0.00       72     0.00     0.00  void std::_Destroy_aux<false>::__destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1>*>(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1>*)
+  0.00      0.00     0.00       72     0.00     0.00  void std::_Destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1>*>(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1>*)
+  0.00      0.00     0.00       69     0.00     0.00  __gnu_cxx::new_allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::new_allocator()
+  0.00      0.00     0.00       69     0.00     0.00  std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::allocator()
+  0.00      0.00     0.00       69     0.00     0.00  std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_Vector_impl::_Vector_impl()
+  0.00      0.00     0.00       69     0.00     0.00  std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_Vector_base()
+  0.00      0.00     0.00       65     0.00     0.00  __gnu_cxx::new_allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::~new_allocator()
+  0.00      0.00     0.00       65     0.00     0.00  std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::~allocator()
+  0.00      0.00     0.00       65     0.00     0.00  std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_Vector_impl::~_Vector_impl()
+  0.00      0.00     0.00       65     0.00     0.00  std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_M_deallocate(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, unsigned long)
+  0.00      0.00     0.00       65     0.00     0.00  std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_M_get_Tp_allocator()
+  0.00      0.00     0.00       65     0.00     0.00  std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::~_Vector_base()
+  0.00      0.00     0.00       65     0.00     0.00  void std::_Destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1> >(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1>*, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >&)
+  0.00      0.00     0.00       64     0.00     0.00  void std::_Destroy_aux<false>::__destroy<AaltoGames::ControlPBP::MarginalSample*>(AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample*)
+  0.00      0.00     0.00       64     0.00     0.00  std::vector<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::~vector()
+  0.00      0.00     0.00       64     0.00     0.00  void std::_Destroy<AaltoGames::ControlPBP::MarginalSample*>(AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample*)
+  0.00      0.00     0.00       32     0.00     0.00  Eigen::Matrix<double, -1, 1, 0, -1, 1>::~Matrix()
+  0.00      0.00     0.00       32     0.00     0.00  __gnu_cxx::new_allocator<AaltoGames::ControlPBP::MarginalSample>::deallocate(AaltoGames::ControlPBP::MarginalSample*, unsigned long)
+  0.00      0.00     0.00       32     0.00     0.00  __gnu_cxx::new_allocator<AaltoGames::ControlPBP::MarginalSample>::new_allocator()
+  0.00      0.00     0.00       32     0.00     0.00  __gnu_cxx::new_allocator<AaltoGames::ControlPBP::MarginalSample>::~new_allocator()
+  0.00      0.00     0.00       32     0.00     0.00  std::allocator<AaltoGames::ControlPBP::MarginalSample>::allocator()
+  0.00      0.00     0.00       32     0.00     0.00  std::allocator<AaltoGames::ControlPBP::MarginalSample>::~allocator()
+  0.00      0.00     0.00       32     0.00     0.00  std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_Vector_impl::_Vector_impl()
+  0.00      0.00     0.00       32     0.00     0.00  std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_Vector_impl::~_Vector_impl()
+  0.00      0.00     0.00       32     0.00     0.00  std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_M_deallocate(AaltoGames::ControlPBP::MarginalSample*, unsigned long)
+  0.00      0.00     0.00       32     0.00     0.00  std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_M_get_Tp_allocator()
+  0.00      0.00     0.00       32     0.00     0.00  std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_Vector_base()
+  0.00      0.00     0.00       32     0.00     0.00  std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::~_Vector_base()
+  0.00      0.00     0.00       32     0.00     0.00  void std::_Destroy<AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample>(AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample*, std::allocator<AaltoGames::ControlPBP::MarginalSample>&)
+  0.00      0.00     0.00       31     0.00     0.00  AaltoGames::DiagonalGMM::~DiagonalGMM()
+  0.00      0.00     0.00       31     0.00     0.00  std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::~vector()
+  0.00      0.00     0.00       31     0.00     0.00  AaltoGames::DiagonalGMM* std::__addressof<AaltoGames::DiagonalGMM>(AaltoGames::DiagonalGMM&)
+  0.00      0.00     0.00       31     0.00     0.00  std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >* std::__addressof<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >&)
+  0.00      0.00     0.00       31     0.00     0.00  void std::_Destroy<AaltoGames::DiagonalGMM>(AaltoGames::DiagonalGMM*)
+  0.00      0.00     0.00       31     0.00     0.00  void std::_Destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*)
+  0.00      0.00     0.00        9     0.00     0.00  Eigen::Matrix<float, -1, 1, 0, -1, 1>::Matrix()
+  0.00      0.00     0.00        3     0.00     0.00  __gnu_cxx::new_allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::deallocate(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  void std::_Destroy_aux<false>::__destroy<AaltoGames::DiagonalGMM*>(AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM*)
+  0.00      0.00     0.00        2     0.00     0.00  void std::_Destroy_aux<false>::__destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*>(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*)
+  0.00      0.00     0.00        2     0.00     0.00  void std::_Destroy_aux<true>::__destroy<double*>(double*, double*)
+  0.00      0.00     0.00        2     0.00     0.00  void std::_Destroy<AaltoGames::DiagonalGMM*>(AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM*)
+  0.00      0.00     0.00        2     0.00     0.00  void std::_Destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*>(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*)
+  0.00      0.00     0.00        2     0.00     0.00  void std::_Destroy<double*>(double*, double*)
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I_pos1
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  AaltoGames::ControlPBP::ControlPBP()
+  0.00      0.00     0.00        1     0.00     0.00  boost::arg<1>::arg()
+  0.00      0.00     0.00        1     0.00     0.00  boost::arg<2>::arg()
+  0.00      0.00     0.00        1     0.00     0.00  boost::arg<3>::arg()
+  0.00      0.00     0.00        1     0.00     0.00  boost::arg<4>::arg()
+  0.00      0.00     0.00        1     0.00     0.00  boost::arg<5>::arg()
+  0.00      0.00     0.00        1     0.00     0.00  boost::arg<6>::arg()
+  0.00      0.00     0.00        1     0.00     0.00  boost::arg<7>::arg()
+  0.00      0.00     0.00        1     0.00     0.00  boost::arg<8>::arg()
+  0.00      0.00     0.00        1     0.00     0.00  boost::arg<9>::arg()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<AaltoGames::DiagonalGMM>::deallocate(AaltoGames::DiagonalGMM*, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<AaltoGames::DiagonalGMM>::new_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<AaltoGames::DiagonalGMM>::~new_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::deallocate(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::new_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::~new_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<double>::deallocate(double*, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<double>::new_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<double>::~new_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<AaltoGames::DiagonalGMM>::allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<AaltoGames::DiagonalGMM>::~allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::~allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<double>::allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<double>::~allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_Vector_impl::_Vector_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_Vector_impl::~_Vector_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_M_deallocate(AaltoGames::DiagonalGMM*, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_M_get_Tp_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_Vector_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::~_Vector_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_Vector_impl::_Vector_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_Vector_impl::~_Vector_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_M_deallocate(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_M_get_Tp_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_Vector_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::~_Vector_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_Vector_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::~_Vector_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::vector()
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::vector()
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::vector()
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::vector()
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<double, std::allocator<double> >::vector()
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Destroy<AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM>(AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM*, std::allocator<AaltoGames::DiagonalGMM>&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Destroy<double*, double>(double*, double*, std::allocator<double>&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00  240000/240000      main [5]
+[6]      0.0    0.00    0.00  240000         double AaltoGames::squared<double>(double) [6]
+-----------------------------------------------
+                0.00    0.00  240000/240000      main [5]
+[7]      0.0    0.00    0.00  240000         float AaltoGames::squared<float>(float) [7]
+-----------------------------------------------
+                0.00    0.00  120000/120000      main [5]
+[8]      0.0    0.00    0.00  120000         std::abs(float) [8]
+-----------------------------------------------
+                0.00    0.00   56241/56241       void Eigen::internal::conditional_aligned_free<true>(void*) [10]
+[9]      0.0    0.00    0.00   56241         Eigen::internal::aligned_free(void*) [9]
+-----------------------------------------------
+                0.00    0.00    1585/53241       void Eigen::internal::conditional_aligned_delete_auto<double, true>(double*, unsigned long) [30]
+                0.00    0.00   51656/53241       void Eigen::internal::conditional_aligned_delete_auto<float, true>(float*, unsigned long) [19]
+[10]     0.0    0.00    0.00   53241         void Eigen::internal::conditional_aligned_free<true>(void*) [10]
+                0.00    0.00   56241/56241       Eigen::internal::aligned_free(void*) [9]
+-----------------------------------------------
+                0.00    0.00   22008/22008       Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 1>::DenseCoeffsBase() [12]
+[11]     0.0    0.00    0.00   22008         Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 0>::DenseCoeffsBase() [11]
+                0.00    0.00   22008/22008       Eigen::EigenBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::EigenBase() [16]
+-----------------------------------------------
+                0.00    0.00   22008/22008       Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 3>::DenseCoeffsBase() [13]
+[12]     0.0    0.00    0.00   22008         Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 1>::DenseCoeffsBase() [12]
+                0.00    0.00   22008/22008       Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 0>::DenseCoeffsBase() [11]
+-----------------------------------------------
+                0.00    0.00   22008/22008       Eigen::internal::special_scalar_op_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, float, float, false>::special_scalar_op_base() [14]
+[13]     0.0    0.00    0.00   22008         Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 3>::DenseCoeffsBase() [13]
+                0.00    0.00   22008/22008       Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 1>::DenseCoeffsBase() [12]
+-----------------------------------------------
+                0.00    0.00   22008/22008       Eigen::DenseBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::DenseBase() [15]
+[14]     0.0    0.00    0.00   22008         Eigen::internal::special_scalar_op_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, float, float, false>::special_scalar_op_base() [14]
+                0.00    0.00   22008/22008       Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 3>::DenseCoeffsBase() [13]
+-----------------------------------------------
+                0.00    0.00   22008/22008       Eigen::MatrixBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::MatrixBase() [20]
+[15]     0.0    0.00    0.00   22008         Eigen::DenseBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::DenseBase() [15]
+                0.00    0.00   22008/22008       Eigen::internal::special_scalar_op_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, float, float, false>::special_scalar_op_base() [14]
+-----------------------------------------------
+                0.00    0.00   22008/22008       Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 0>::DenseCoeffsBase() [11]
+[16]     0.0    0.00    0.00   22008         Eigen::EigenBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::EigenBase() [16]
+-----------------------------------------------
+                0.00    0.00   22004/22004       Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::~PlainObjectBase() [18]
+[17]     0.0    0.00    0.00   22004         Eigen::DenseStorage<float, -1, -1, 1, 0>::~DenseStorage() [17]
+                0.00    0.00   22004/22004       void Eigen::internal::conditional_aligned_delete_auto<float, true>(float*, unsigned long) [19]
+-----------------------------------------------
+                0.00    0.00   22004/22004       Eigen::Matrix<float, -1, 1, 0, -1, 1>::~Matrix() [24]
+[18]     0.0    0.00    0.00   22004         Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::~PlainObjectBase() [18]
+                0.00    0.00   22004/22004       Eigen::DenseStorage<float, -1, -1, 1, 0>::~DenseStorage() [17]
+-----------------------------------------------
+                0.00    0.00   22004/22004       Eigen::DenseStorage<float, -1, -1, 1, 0>::~DenseStorage() [17]
+[19]     0.0    0.00    0.00   22004         void Eigen::internal::conditional_aligned_delete_auto<float, true>(float*, unsigned long) [19]
+                0.00    0.00   51656/53241       void Eigen::internal::conditional_aligned_free<true>(void*) [10]
+-----------------------------------------------
+                0.00    0.00   14150/14150       Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::PlainObjectBase() [23]
+[20]     0.0    0.00    0.00   14150         Eigen::MatrixBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::MatrixBase() [20]
+                0.00    0.00   22008/22008       Eigen::DenseBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::DenseBase() [15]
+-----------------------------------------------
+                0.00    0.00   14150/14150       Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::PlainObjectBase() [23]
+[21]     0.0    0.00    0.00   14150         Eigen::DenseStorage<float, -1, -1, 1, 0>::DenseStorage() [21]
+-----------------------------------------------
+                0.00    0.00   14150/14150       Eigen::Matrix<float, -1, 1, 0, -1, 1>::Matrix() [68]
+[22]     0.0    0.00    0.00   14150         Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::_check_template_params() [22]
+-----------------------------------------------
+                0.00    0.00   14150/14150       Eigen::Matrix<float, -1, 1, 0, -1, 1>::Matrix() [68]
+[23]     0.0    0.00    0.00   14150         Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::PlainObjectBase() [23]
+                0.00    0.00   14150/14150       Eigen::MatrixBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::MatrixBase() [20]
+                0.00    0.00   14150/14150       Eigen::DenseStorage<float, -1, -1, 1, 0>::DenseStorage() [21]
+-----------------------------------------------
+                0.00    0.00      82/12637       void std::_Destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1> >(Eigen::Matrix<float, -1, 1, 0, -1, 1>*) [32]
+                0.00    0.00   12555/12637       AaltoGames::ControlPBP::MarginalSample::~MarginalSample() [25]
+[24]     0.0    0.00    0.00   12637         Eigen::Matrix<float, -1, 1, 0, -1, 1>::~Matrix() [24]
+                0.00    0.00   22004/22004       Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::~PlainObjectBase() [18]
+-----------------------------------------------
+                0.00    0.00    2511/2511        void std::_Destroy<AaltoGames::ControlPBP::MarginalSample>(AaltoGames::ControlPBP::MarginalSample*) [27]
+[25]     0.0    0.00    0.00    2511         AaltoGames::ControlPBP::MarginalSample::~MarginalSample() [25]
+                0.00    0.00   12555/12637       Eigen::Matrix<float, -1, 1, 0, -1, 1>::~Matrix() [24]
+-----------------------------------------------
+                0.00    0.00    2511/2511        void std::_Destroy_aux<false>::__destroy<AaltoGames::ControlPBP::MarginalSample*>(AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample*) [46]
+[26]     0.0    0.00    0.00    2511         AaltoGames::ControlPBP::MarginalSample* std::__addressof<AaltoGames::ControlPBP::MarginalSample>(AaltoGames::ControlPBP::MarginalSample&) [26]
+-----------------------------------------------
+                0.00    0.00    2511/2511        void std::_Destroy_aux<false>::__destroy<AaltoGames::ControlPBP::MarginalSample*>(AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample*) [46]
+[27]     0.0    0.00    0.00    2511         void std::_Destroy<AaltoGames::ControlPBP::MarginalSample>(AaltoGames::ControlPBP::MarginalSample*) [27]
+                0.00    0.00    2511/2511        AaltoGames::ControlPBP::MarginalSample::~MarginalSample() [25]
+-----------------------------------------------
+                0.00    0.00    1582/1582        Eigen::PlainObjectBase<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::~PlainObjectBase() [29]
+[28]     0.0    0.00    0.00    1582         Eigen::DenseStorage<double, -1, -1, 1, 0>::~DenseStorage() [28]
+                0.00    0.00    1582/1582        void Eigen::internal::conditional_aligned_delete_auto<double, true>(double*, unsigned long) [30]
+-----------------------------------------------
+                0.00    0.00    1582/1582        Eigen::Matrix<double, -1, 1, 0, -1, 1>::~Matrix() [49]
+[29]     0.0    0.00    0.00    1582         Eigen::PlainObjectBase<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::~PlainObjectBase() [29]
+                0.00    0.00    1582/1582        Eigen::DenseStorage<double, -1, -1, 1, 0>::~DenseStorage() [28]
+-----------------------------------------------
+                0.00    0.00    1582/1582        Eigen::DenseStorage<double, -1, -1, 1, 0>::~DenseStorage() [28]
+[30]     0.0    0.00    0.00    1582         void Eigen::internal::conditional_aligned_delete_auto<double, true>(double*, unsigned long) [30]
+                0.00    0.00    1585/53241       void Eigen::internal::conditional_aligned_free<true>(void*) [10]
+-----------------------------------------------
+                0.00    0.00      82/82          void std::_Destroy_aux<false>::__destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1>*>(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1>*) [33]
+[31]     0.0    0.00    0.00      82         Eigen::Matrix<float, -1, 1, 0, -1, 1>* std::__addressof<Eigen::Matrix<float, -1, 1, 0, -1, 1> >(Eigen::Matrix<float, -1, 1, 0, -1, 1>&) [31]
+-----------------------------------------------
+                0.00    0.00      82/82          void std::_Destroy_aux<false>::__destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1>*>(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1>*) [33]
+[32]     0.0    0.00    0.00      82         void std::_Destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1> >(Eigen::Matrix<float, -1, 1, 0, -1, 1>*) [32]
+                0.00    0.00      82/12637       Eigen::Matrix<float, -1, 1, 0, -1, 1>::~Matrix() [24]
+-----------------------------------------------
+                0.00    0.00      72/72          void std::_Destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1>*>(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1>*) [34]
+[33]     0.0    0.00    0.00      72         void std::_Destroy_aux<false>::__destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1>*>(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1>*) [33]
+                0.00    0.00      82/82          Eigen::Matrix<float, -1, 1, 0, -1, 1>* std::__addressof<Eigen::Matrix<float, -1, 1, 0, -1, 1> >(Eigen::Matrix<float, -1, 1, 0, -1, 1>&) [31]
+                0.00    0.00      82/82          void std::_Destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1> >(Eigen::Matrix<float, -1, 1, 0, -1, 1>*) [32]
+-----------------------------------------------
+                0.00    0.00      72/72          void std::_Destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1> >(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1>*, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >&) [45]
+[34]     0.0    0.00    0.00      72         void std::_Destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1>*>(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1>*) [34]
+                0.00    0.00      72/72          void std::_Destroy_aux<false>::__destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1>*>(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1>*) [33]
+-----------------------------------------------
+                0.00    0.00      69/69          std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::allocator() [36]
+[35]     0.0    0.00    0.00      69         __gnu_cxx::new_allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::new_allocator() [35]
+-----------------------------------------------
+                0.00    0.00      69/69          std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_Vector_impl::_Vector_impl() [37]
+[36]     0.0    0.00    0.00      69         std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::allocator() [36]
+                0.00    0.00      69/69          __gnu_cxx::new_allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::new_allocator() [35]
+-----------------------------------------------
+                0.00    0.00      69/69          std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_Vector_base() [38]
+[37]     0.0    0.00    0.00      69         std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_Vector_impl::_Vector_impl() [37]
+                0.00    0.00      69/69          std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::allocator() [36]
+-----------------------------------------------
+                0.00    0.00      69/69          std::vector<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::vector() [123]
+[38]     0.0    0.00    0.00      69         std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_Vector_base() [38]
+                0.00    0.00      69/69          std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_Vector_impl::_Vector_impl() [37]
+-----------------------------------------------
+                0.00    0.00      65/65          std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::~allocator() [40]
+[39]     0.0    0.00    0.00      65         __gnu_cxx::new_allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::~new_allocator() [39]
+-----------------------------------------------
+                0.00    0.00      65/65          std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_Vector_impl::~_Vector_impl() [41]
+[40]     0.0    0.00    0.00      65         std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::~allocator() [40]
+                0.00    0.00      65/65          __gnu_cxx::new_allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::~new_allocator() [39]
+-----------------------------------------------
+                0.00    0.00      65/65          std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::~_Vector_base() [44]
+[41]     0.0    0.00    0.00      65         std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_Vector_impl::~_Vector_impl() [41]
+                0.00    0.00      65/65          std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::~allocator() [40]
+-----------------------------------------------
+                0.00    0.00      65/65          std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::~_Vector_base() [44]
+[42]     0.0    0.00    0.00      65         std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_M_deallocate(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, unsigned long) [42]
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::deallocate(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, unsigned long) [69]
+-----------------------------------------------
+                0.00    0.00      65/65          std::vector<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::~vector() [47]
+[43]     0.0    0.00    0.00      65         std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_M_get_Tp_allocator() [43]
+-----------------------------------------------
+                0.00    0.00      65/65          std::vector<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::~vector() [47]
+[44]     0.0    0.00    0.00      65         std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::~_Vector_base() [44]
+                0.00    0.00      65/65          std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_Vector_impl::~_Vector_impl() [41]
+                0.00    0.00      65/65          std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_M_deallocate(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, unsigned long) [42]
+-----------------------------------------------
+                0.00    0.00      65/65          std::vector<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::~vector() [47]
+[45]     0.0    0.00    0.00      65         void std::_Destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1> >(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1>*, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >&) [45]
+                0.00    0.00      72/72          void std::_Destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1>*>(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1>*) [34]
+-----------------------------------------------
+                0.00    0.00      64/64          void std::_Destroy<AaltoGames::ControlPBP::MarginalSample*>(AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample*) [48]
+[46]     0.0    0.00    0.00      64         void std::_Destroy_aux<false>::__destroy<AaltoGames::ControlPBP::MarginalSample*>(AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample*) [46]
+                0.00    0.00    2511/2511        AaltoGames::ControlPBP::MarginalSample* std::__addressof<AaltoGames::ControlPBP::MarginalSample>(AaltoGames::ControlPBP::MarginalSample&) [26]
+                0.00    0.00    2511/2511        void std::_Destroy<AaltoGames::ControlPBP::MarginalSample>(AaltoGames::ControlPBP::MarginalSample*) [27]
+-----------------------------------------------
+                0.00    0.00      64/64          AaltoGames::DiagonalGMM::~DiagonalGMM() [62]
+[47]     0.0    0.00    0.00      64         std::vector<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::~vector() [47]
+                0.00    0.00      65/65          std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_M_get_Tp_allocator() [43]
+                0.00    0.00      65/65          std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::~_Vector_base() [44]
+                0.00    0.00      65/65          void std::_Destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1> >(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1>*, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >&) [45]
+-----------------------------------------------
+                0.00    0.00      64/64          void std::_Destroy<AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample>(AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample*, std::allocator<AaltoGames::ControlPBP::MarginalSample>&) [61]
+[48]     0.0    0.00    0.00      64         void std::_Destroy<AaltoGames::ControlPBP::MarginalSample*>(AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample*) [48]
+                0.00    0.00      64/64          void std::_Destroy_aux<false>::__destroy<AaltoGames::ControlPBP::MarginalSample*>(AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample*) [46]
+-----------------------------------------------
+                0.00    0.00      32/32          AaltoGames::DiagonalGMM::~DiagonalGMM() [62]
+[49]     0.0    0.00    0.00      32         Eigen::Matrix<double, -1, 1, 0, -1, 1>::~Matrix() [49]
+                0.00    0.00    1582/1582        Eigen::PlainObjectBase<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::~PlainObjectBase() [29]
+-----------------------------------------------
+                0.00    0.00      32/32          std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_M_deallocate(AaltoGames::ControlPBP::MarginalSample*, unsigned long) [57]
+[50]     0.0    0.00    0.00      32         __gnu_cxx::new_allocator<AaltoGames::ControlPBP::MarginalSample>::deallocate(AaltoGames::ControlPBP::MarginalSample*, unsigned long) [50]
+-----------------------------------------------
+                0.00    0.00      32/32          std::allocator<AaltoGames::ControlPBP::MarginalSample>::allocator() [53]
+[51]     0.0    0.00    0.00      32         __gnu_cxx::new_allocator<AaltoGames::ControlPBP::MarginalSample>::new_allocator() [51]
+-----------------------------------------------
+                0.00    0.00      32/32          std::allocator<AaltoGames::ControlPBP::MarginalSample>::~allocator() [54]
+[52]     0.0    0.00    0.00      32         __gnu_cxx::new_allocator<AaltoGames::ControlPBP::MarginalSample>::~new_allocator() [52]
+-----------------------------------------------
+                0.00    0.00      32/32          std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_Vector_impl::_Vector_impl() [55]
+[53]     0.0    0.00    0.00      32         std::allocator<AaltoGames::ControlPBP::MarginalSample>::allocator() [53]
+                0.00    0.00      32/32          __gnu_cxx::new_allocator<AaltoGames::ControlPBP::MarginalSample>::new_allocator() [51]
+-----------------------------------------------
+                0.00    0.00      32/32          std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_Vector_impl::~_Vector_impl() [56]
+[54]     0.0    0.00    0.00      32         std::allocator<AaltoGames::ControlPBP::MarginalSample>::~allocator() [54]
+                0.00    0.00      32/32          __gnu_cxx::new_allocator<AaltoGames::ControlPBP::MarginalSample>::~new_allocator() [52]
+-----------------------------------------------
+                0.00    0.00      32/32          std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_Vector_base() [59]
+[55]     0.0    0.00    0.00      32         std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_Vector_impl::_Vector_impl() [55]
+                0.00    0.00      32/32          std::allocator<AaltoGames::ControlPBP::MarginalSample>::allocator() [53]
+-----------------------------------------------
+                0.00    0.00      32/32          std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::~_Vector_base() [60]
+[56]     0.0    0.00    0.00      32         std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_Vector_impl::~_Vector_impl() [56]
+                0.00    0.00      32/32          std::allocator<AaltoGames::ControlPBP::MarginalSample>::~allocator() [54]
+-----------------------------------------------
+                0.00    0.00      32/32          std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::~_Vector_base() [60]
+[57]     0.0    0.00    0.00      32         std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_M_deallocate(AaltoGames::ControlPBP::MarginalSample*, unsigned long) [57]
+                0.00    0.00      32/32          __gnu_cxx::new_allocator<AaltoGames::ControlPBP::MarginalSample>::deallocate(AaltoGames::ControlPBP::MarginalSample*, unsigned long) [50]
+-----------------------------------------------
+                0.00    0.00      32/32          std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::~vector() [63]
+[58]     0.0    0.00    0.00      32         std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_M_get_Tp_allocator() [58]
+-----------------------------------------------
+                0.00    0.00      32/32          std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::vector() [121]
+[59]     0.0    0.00    0.00      32         std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_Vector_base() [59]
+                0.00    0.00      32/32          std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_Vector_impl::_Vector_impl() [55]
+-----------------------------------------------
+                0.00    0.00      32/32          std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::~vector() [63]
+[60]     0.0    0.00    0.00      32         std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::~_Vector_base() [60]
+                0.00    0.00      32/32          std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_M_deallocate(AaltoGames::ControlPBP::MarginalSample*, unsigned long) [57]
+                0.00    0.00      32/32          std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_Vector_impl::~_Vector_impl() [56]
+-----------------------------------------------
+                0.00    0.00      32/32          std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::~vector() [63]
+[61]     0.0    0.00    0.00      32         void std::_Destroy<AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample>(AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample*, std::allocator<AaltoGames::ControlPBP::MarginalSample>&) [61]
+                0.00    0.00      64/64          void std::_Destroy<AaltoGames::ControlPBP::MarginalSample*>(AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample*) [48]
+-----------------------------------------------
+                0.00    0.00      31/31          void std::_Destroy<AaltoGames::DiagonalGMM>(AaltoGames::DiagonalGMM*) [66]
+[62]     0.0    0.00    0.00      31         AaltoGames::DiagonalGMM::~DiagonalGMM() [62]
+                0.00    0.00      64/64          std::vector<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::~vector() [47]
+                0.00    0.00      32/32          Eigen::Matrix<double, -1, 1, 0, -1, 1>::~Matrix() [49]
+-----------------------------------------------
+                0.00    0.00      31/31          void std::_Destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*) [67]
+[63]     0.0    0.00    0.00      31         std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::~vector() [63]
+                0.00    0.00      32/32          std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_M_get_Tp_allocator() [58]
+                0.00    0.00      32/32          void std::_Destroy<AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample>(AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample*, std::allocator<AaltoGames::ControlPBP::MarginalSample>&) [61]
+                0.00    0.00      32/32          std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::~_Vector_base() [60]
+-----------------------------------------------
+                0.00    0.00      31/31          void std::_Destroy_aux<false>::__destroy<AaltoGames::DiagonalGMM*>(AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM*) [70]
+[64]     0.0    0.00    0.00      31         AaltoGames::DiagonalGMM* std::__addressof<AaltoGames::DiagonalGMM>(AaltoGames::DiagonalGMM&) [64]
+-----------------------------------------------
+                0.00    0.00      31/31          void std::_Destroy_aux<false>::__destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*>(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*) [71]
+[65]     0.0    0.00    0.00      31         std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >* std::__addressof<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >&) [65]
+-----------------------------------------------
+                0.00    0.00      31/31          void std::_Destroy_aux<false>::__destroy<AaltoGames::DiagonalGMM*>(AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM*) [70]
+[66]     0.0    0.00    0.00      31         void std::_Destroy<AaltoGames::DiagonalGMM>(AaltoGames::DiagonalGMM*) [66]
+                0.00    0.00      31/31          AaltoGames::DiagonalGMM::~DiagonalGMM() [62]
+-----------------------------------------------
+                0.00    0.00      31/31          void std::_Destroy_aux<false>::__destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*>(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*) [71]
+[67]     0.0    0.00    0.00      31         void std::_Destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*) [67]
+                0.00    0.00      31/31          std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::~vector() [63]
+-----------------------------------------------
+                0.00    0.00       9/9           AaltoGames::ControlPBP::ControlPBP() [78]
+[68]     0.0    0.00    0.00       9         Eigen::Matrix<float, -1, 1, 0, -1, 1>::Matrix() [68]
+                0.00    0.00   14150/14150       Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::PlainObjectBase() [23]
+                0.00    0.00   14150/14150       Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::_check_template_params() [22]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_M_deallocate(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, unsigned long) [42]
+[69]     0.0    0.00    0.00       3         __gnu_cxx::new_allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::deallocate(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, unsigned long) [69]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Destroy<AaltoGames::DiagonalGMM*>(AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM*) [73]
+[70]     0.0    0.00    0.00       2         void std::_Destroy_aux<false>::__destroy<AaltoGames::DiagonalGMM*>(AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM*) [70]
+                0.00    0.00      31/31          AaltoGames::DiagonalGMM* std::__addressof<AaltoGames::DiagonalGMM>(AaltoGames::DiagonalGMM&) [64]
+                0.00    0.00      31/31          void std::_Destroy<AaltoGames::DiagonalGMM>(AaltoGames::DiagonalGMM*) [66]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*>(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*) [74]
+[71]     0.0    0.00    0.00       2         void std::_Destroy_aux<false>::__destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*>(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*) [71]
+                0.00    0.00      31/31          void std::_Destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*) [67]
+                0.00    0.00      31/31          std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >* std::__addressof<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >&) [65]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Destroy<double*>(double*, double*) [75]
+[72]     0.0    0.00    0.00       2         void std::_Destroy_aux<true>::__destroy<double*>(double*, double*) [72]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Destroy<AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM>(AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM*, std::allocator<AaltoGames::DiagonalGMM>&) [126]
+[73]     0.0    0.00    0.00       2         void std::_Destroy<AaltoGames::DiagonalGMM*>(AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM*) [73]
+                0.00    0.00       2/2           void std::_Destroy_aux<false>::__destroy<AaltoGames::DiagonalGMM*>(AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM*) [70]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >&) [127]
+[74]     0.0    0.00    0.00       2         void std::_Destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*>(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*) [74]
+                0.00    0.00       2/2           void std::_Destroy_aux<false>::__destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*>(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*) [71]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Destroy<double*, double>(double*, double*, std::allocator<double>&) [128]
+[75]     0.0    0.00    0.00       2         void std::_Destroy<double*>(double*, double*) [75]
+                0.00    0.00       2/2           void std::_Destroy_aux<true>::__destroy<double*>(double*, double*) [72]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [138]
+[76]     0.0    0.00    0.00       1         _GLOBAL__sub_I_pos1 [76]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [77]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_pos1 [76]
+[77]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [77]
+                0.00    0.00       1/1           boost::arg<1>::arg() [79]
+                0.00    0.00       1/1           boost::arg<2>::arg() [80]
+                0.00    0.00       1/1           boost::arg<4>::arg() [82]
+                0.00    0.00       1/1           boost::arg<3>::arg() [81]
+                0.00    0.00       1/1           boost::arg<5>::arg() [83]
+                0.00    0.00       1/1           boost::arg<7>::arg() [85]
+                0.00    0.00       1/1           boost::arg<6>::arg() [84]
+                0.00    0.00       1/1           boost::arg<9>::arg() [87]
+                0.00    0.00       1/1           boost::arg<8>::arg() [86]
+-----------------------------------------------
+                0.00    0.00       1/1           main [5]
+[78]     0.0    0.00    0.00       1         AaltoGames::ControlPBP::ControlPBP() [78]
+                0.00    0.00       9/9           Eigen::Matrix<float, -1, 1, 0, -1, 1>::Matrix() [68]
+                0.00    0.00       1/1           std::vector<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::vector() [124]
+                0.00    0.00       1/1           std::vector<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::vector() [123]
+                0.00    0.00       1/1           std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::vector() [121]
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::vector() [125]
+                0.00    0.00       1/1           std::vector<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::vector() [122]
+-----------------------------------------------
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [77]
+[79]     0.0    0.00    0.00       1         boost::arg<1>::arg() [79]
+-----------------------------------------------
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [77]
+[80]     0.0    0.00    0.00       1         boost::arg<2>::arg() [80]
+-----------------------------------------------
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [77]
+[81]     0.0    0.00    0.00       1         boost::arg<3>::arg() [81]
+-----------------------------------------------
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [77]
+[82]     0.0    0.00    0.00       1         boost::arg<4>::arg() [82]
+-----------------------------------------------
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [77]
+[83]     0.0    0.00    0.00       1         boost::arg<5>::arg() [83]
+-----------------------------------------------
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [77]
+[84]     0.0    0.00    0.00       1         boost::arg<6>::arg() [84]
+-----------------------------------------------
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [77]
+[85]     0.0    0.00    0.00       1         boost::arg<7>::arg() [85]
+-----------------------------------------------
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [77]
+[86]     0.0    0.00    0.00       1         boost::arg<8>::arg() [86]
+-----------------------------------------------
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [77]
+[87]     0.0    0.00    0.00       1         boost::arg<9>::arg() [87]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_M_deallocate(AaltoGames::DiagonalGMM*, unsigned long) [105]
+[88]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<AaltoGames::DiagonalGMM>::deallocate(AaltoGames::DiagonalGMM*, unsigned long) [88]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<AaltoGames::DiagonalGMM>::allocator() [97]
+[89]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<AaltoGames::DiagonalGMM>::new_allocator() [89]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<AaltoGames::DiagonalGMM>::~allocator() [98]
+[90]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<AaltoGames::DiagonalGMM>::~new_allocator() [90]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_M_deallocate(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, unsigned long) [111]
+[91]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::deallocate(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, unsigned long) [91]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::allocator() [99]
+[92]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::new_allocator() [92]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::~allocator() [100]
+[93]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::~new_allocator() [93]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long) [117]
+[94]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<double>::deallocate(double*, unsigned long) [94]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<double>::allocator() [101]
+[95]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<double>::new_allocator() [95]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<double>::~allocator() [102]
+[96]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<double>::~new_allocator() [96]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_Vector_impl::_Vector_impl() [103]
+[97]     0.0    0.00    0.00       1         std::allocator<AaltoGames::DiagonalGMM>::allocator() [97]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<AaltoGames::DiagonalGMM>::new_allocator() [89]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_Vector_impl::~_Vector_impl() [104]
+[98]     0.0    0.00    0.00       1         std::allocator<AaltoGames::DiagonalGMM>::~allocator() [98]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<AaltoGames::DiagonalGMM>::~new_allocator() [90]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_Vector_impl::_Vector_impl() [109]
+[99]     0.0    0.00    0.00       1         std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::allocator() [99]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::new_allocator() [92]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_Vector_impl::~_Vector_impl() [110]
+[100]    0.0    0.00    0.00       1         std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::~allocator() [100]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::~new_allocator() [93]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl() [115]
+[101]    0.0    0.00    0.00       1         std::allocator<double>::allocator() [101]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<double>::new_allocator() [95]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl() [116]
+[102]    0.0    0.00    0.00       1         std::allocator<double>::~allocator() [102]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<double>::~new_allocator() [96]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_Vector_base() [107]
+[103]    0.0    0.00    0.00       1         std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_Vector_impl::_Vector_impl() [103]
+                0.00    0.00       1/1           std::allocator<AaltoGames::DiagonalGMM>::allocator() [97]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::~_Vector_base() [108]
+[104]    0.0    0.00    0.00       1         std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_Vector_impl::~_Vector_impl() [104]
+                0.00    0.00       1/1           std::allocator<AaltoGames::DiagonalGMM>::~allocator() [98]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::~_Vector_base() [108]
+[105]    0.0    0.00    0.00       1         std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_M_deallocate(AaltoGames::DiagonalGMM*, unsigned long) [105]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<AaltoGames::DiagonalGMM>::deallocate(AaltoGames::DiagonalGMM*, unsigned long) [88]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::~vector() [129]
+[106]    0.0    0.00    0.00       1         std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_M_get_Tp_allocator() [106]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::vector() [122]
+[107]    0.0    0.00    0.00       1         std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_Vector_base() [107]
+                0.00    0.00       1/1           std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_Vector_impl::_Vector_impl() [103]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::~vector() [129]
+[108]    0.0    0.00    0.00       1         std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::~_Vector_base() [108]
+                0.00    0.00       1/1           std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_M_deallocate(AaltoGames::DiagonalGMM*, unsigned long) [105]
+                0.00    0.00       1/1           std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_Vector_impl::~_Vector_impl() [104]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_Vector_base() [113]
+[109]    0.0    0.00    0.00       1         std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_Vector_impl::_Vector_impl() [109]
+                0.00    0.00       1/1           std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::allocator() [99]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::~_Vector_base() [114]
+[110]    0.0    0.00    0.00       1         std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_Vector_impl::~_Vector_impl() [110]
+                0.00    0.00       1/1           std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::~allocator() [100]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::~_Vector_base() [114]
+[111]    0.0    0.00    0.00       1         std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_M_deallocate(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, unsigned long) [111]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::deallocate(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, unsigned long) [91]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::~vector() [130]
+[112]    0.0    0.00    0.00       1         std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_M_get_Tp_allocator() [112]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::vector() [124]
+[113]    0.0    0.00    0.00       1         std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_Vector_base() [113]
+                0.00    0.00       1/1           std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_Vector_impl::_Vector_impl() [109]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::~vector() [130]
+[114]    0.0    0.00    0.00       1         std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::~_Vector_base() [114]
+                0.00    0.00       1/1           std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_Vector_impl::~_Vector_impl() [110]
+                0.00    0.00       1/1           std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_M_deallocate(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, unsigned long) [111]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<double, std::allocator<double> >::_Vector_base() [119]
+[115]    0.0    0.00    0.00       1         std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl() [115]
+                0.00    0.00       1/1           std::allocator<double>::allocator() [101]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<double, std::allocator<double> >::~_Vector_base() [120]
+[116]    0.0    0.00    0.00       1         std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl() [116]
+                0.00    0.00       1/1           std::allocator<double>::~allocator() [102]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<double, std::allocator<double> >::~_Vector_base() [120]
+[117]    0.0    0.00    0.00       1         std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long) [117]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<double>::deallocate(double*, unsigned long) [94]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::~vector() [131]
+[118]    0.0    0.00    0.00       1         std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator() [118]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::vector() [125]
+[119]    0.0    0.00    0.00       1         std::_Vector_base<double, std::allocator<double> >::_Vector_base() [119]
+                0.00    0.00       1/1           std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl() [115]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::~vector() [131]
+[120]    0.0    0.00    0.00       1         std::_Vector_base<double, std::allocator<double> >::~_Vector_base() [120]
+                0.00    0.00       1/1           std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long) [117]
+                0.00    0.00       1/1           std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl() [116]
+-----------------------------------------------
+                0.00    0.00       1/1           AaltoGames::ControlPBP::ControlPBP() [78]
+[121]    0.0    0.00    0.00       1         std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::vector() [121]
+                0.00    0.00      32/32          std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_Vector_base() [59]
+-----------------------------------------------
+                0.00    0.00       1/1           AaltoGames::ControlPBP::ControlPBP() [78]
+[122]    0.0    0.00    0.00       1         std::vector<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::vector() [122]
+                0.00    0.00       1/1           std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_Vector_base() [107]
+-----------------------------------------------
+                0.00    0.00       1/1           AaltoGames::ControlPBP::ControlPBP() [78]
+[123]    0.0    0.00    0.00       1         std::vector<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::vector() [123]
+                0.00    0.00      69/69          std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_Vector_base() [38]
+-----------------------------------------------
+                0.00    0.00       1/1           AaltoGames::ControlPBP::ControlPBP() [78]
+[124]    0.0    0.00    0.00       1         std::vector<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::vector() [124]
+                0.00    0.00       1/1           std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_Vector_base() [113]
+-----------------------------------------------
+                0.00    0.00       1/1           AaltoGames::ControlPBP::ControlPBP() [78]
+[125]    0.0    0.00    0.00       1         std::vector<double, std::allocator<double> >::vector() [125]
+                0.00    0.00       1/1           std::_Vector_base<double, std::allocator<double> >::_Vector_base() [119]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::~vector() [129]
+[126]    0.0    0.00    0.00       1         void std::_Destroy<AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM>(AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM*, std::allocator<AaltoGames::DiagonalGMM>&) [126]
+                0.00    0.00       2/2           void std::_Destroy<AaltoGames::DiagonalGMM*>(AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM*) [73]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::~vector() [130]
+[127]    0.0    0.00    0.00       1         void std::_Destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >&) [127]
+                0.00    0.00       2/2           void std::_Destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*>(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*) [74]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::~vector() [131]
+[128]    0.0    0.00    0.00       1         void std::_Destroy<double*, double>(double*, double*, std::allocator<double>&) [128]
+                0.00    0.00       2/2           void std::_Destroy<double*>(double*, double*) [75]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [76] _GLOBAL__sub_I_pos1 (vel.cpp) [89] __gnu_cxx::new_allocator<AaltoGames::DiagonalGMM>::new_allocator() [43] std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_M_get_Tp_allocator()
+  [77] __static_initialization_and_destruction_0(int, int) (vel.cpp) [90] __gnu_cxx::new_allocator<AaltoGames::DiagonalGMM>::~new_allocator() [38] std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_Vector_base()
+  [25] AaltoGames::ControlPBP::MarginalSample::~MarginalSample() [69] __gnu_cxx::new_allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::deallocate(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, unsigned long) [44] std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::~_Vector_base()
+  [78] AaltoGames::ControlPBP::ControlPBP() [35] __gnu_cxx::new_allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::new_allocator() [109] std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_Vector_impl::_Vector_impl()
+  [62] AaltoGames::DiagonalGMM::~DiagonalGMM() [39] __gnu_cxx::new_allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::~new_allocator() [110] std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_Vector_impl::~_Vector_impl()
+   [6] double AaltoGames::squared<double>(double) [91] __gnu_cxx::new_allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::deallocate(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, unsigned long) [111] std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_M_deallocate(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, unsigned long)
+   [7] float AaltoGames::squared<float>(float) [92] __gnu_cxx::new_allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::new_allocator() [112] std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_M_get_Tp_allocator()
+  [20] Eigen::MatrixBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::MatrixBase() [93] __gnu_cxx::new_allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::~new_allocator() [113] std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::_Vector_base()
+  [28] Eigen::DenseStorage<double, -1, -1, 1, 0>::~DenseStorage() [94] __gnu_cxx::new_allocator<double>::deallocate(double*, unsigned long) [114] std::_Vector_base<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::~_Vector_base()
+  [21] Eigen::DenseStorage<float, -1, -1, 1, 0>::DenseStorage() [95] __gnu_cxx::new_allocator<double>::new_allocator() [115] std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl()
+  [17] Eigen::DenseStorage<float, -1, -1, 1, 0>::~DenseStorage() [96] __gnu_cxx::new_allocator<double>::~new_allocator() [116] std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl()
+  [11] Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 0>::DenseCoeffsBase() [53] std::allocator<AaltoGames::ControlPBP::MarginalSample>::allocator() [117] std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long)
+  [12] Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 1>::DenseCoeffsBase() [54] std::allocator<AaltoGames::ControlPBP::MarginalSample>::~allocator() [118] std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator()
+  [13] Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 3>::DenseCoeffsBase() [97] std::allocator<AaltoGames::DiagonalGMM>::allocator() [119] std::_Vector_base<double, std::allocator<double> >::_Vector_base()
+  [29] Eigen::PlainObjectBase<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::~PlainObjectBase() [98] std::allocator<AaltoGames::DiagonalGMM>::~allocator() [120] std::_Vector_base<double, std::allocator<double> >::~_Vector_base()
+  [22] Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::_check_template_params() [36] std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::allocator() [121] std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::vector()
+  [23] Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::PlainObjectBase() [40] std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::~allocator() [63] std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::~vector()
+  [18] Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::~PlainObjectBase() [99] std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::allocator() [122] std::vector<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::vector()
+  [49] Eigen::Matrix<double, -1, 1, 0, -1, 1>::~Matrix() [100] std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >::~allocator() [123] std::vector<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::vector()
+  [68] Eigen::Matrix<float, -1, 1, 0, -1, 1>::Matrix() [101] std::allocator<double>::allocator() [47] std::vector<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::~vector()
+  [24] Eigen::Matrix<float, -1, 1, 0, -1, 1>::~Matrix() [102] std::allocator<double>::~allocator() [124] std::vector<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > > >::vector()
+   [9] Eigen::internal::aligned_free(void*) [46] void std::_Destroy_aux<false>::__destroy<AaltoGames::ControlPBP::MarginalSample*>(AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample*) [125] std::vector<double, std::allocator<double> >::vector()
+  [14] Eigen::internal::special_scalar_op_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, float, float, false>::special_scalar_op_base() [70] void std::_Destroy_aux<false>::__destroy<AaltoGames::DiagonalGMM*>(AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM*) [26] AaltoGames::ControlPBP::MarginalSample* std::__addressof<AaltoGames::ControlPBP::MarginalSample>(AaltoGames::ControlPBP::MarginalSample&)
+  [10] void Eigen::internal::conditional_aligned_free<true>(void*) [33] void std::_Destroy_aux<false>::__destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1>*>(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1>*) [64] AaltoGames::DiagonalGMM* std::__addressof<AaltoGames::DiagonalGMM>(AaltoGames::DiagonalGMM&)
+  [30] void Eigen::internal::conditional_aligned_delete_auto<double, true>(double*, unsigned long) [71] void std::_Destroy_aux<false>::__destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*>(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*) [31] Eigen::Matrix<float, -1, 1, 0, -1, 1>* std::__addressof<Eigen::Matrix<float, -1, 1, 0, -1, 1> >(Eigen::Matrix<float, -1, 1, 0, -1, 1>&)
+  [19] void Eigen::internal::conditional_aligned_delete_auto<float, true>(float*, unsigned long) [72] void std::_Destroy_aux<true>::__destroy<double*>(double*, double*) [65] std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >* std::__addressof<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >&)
+  [15] Eigen::DenseBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::DenseBase() [55] std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_Vector_impl::_Vector_impl() [8] std::abs(float)
+  [16] Eigen::EigenBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::EigenBase() [56] std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_Vector_impl::~_Vector_impl() [27] void std::_Destroy<AaltoGames::ControlPBP::MarginalSample>(AaltoGames::ControlPBP::MarginalSample*)
+  [79] boost::arg<1>::arg()   [57] std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_M_deallocate(AaltoGames::ControlPBP::MarginalSample*, unsigned long) [66] void std::_Destroy<AaltoGames::DiagonalGMM>(AaltoGames::DiagonalGMM*)
+  [80] boost::arg<2>::arg()   [58] std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_M_get_Tp_allocator() [32] void std::_Destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1> >(Eigen::Matrix<float, -1, 1, 0, -1, 1>*)
+  [81] boost::arg<3>::arg()   [59] std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::_Vector_base() [48] void std::_Destroy<AaltoGames::ControlPBP::MarginalSample*>(AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample*)
+  [82] boost::arg<4>::arg()   [60] std::_Vector_base<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >::~_Vector_base() [61] void std::_Destroy<AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample>(AaltoGames::ControlPBP::MarginalSample*, AaltoGames::ControlPBP::MarginalSample*, std::allocator<AaltoGames::ControlPBP::MarginalSample>&)
+  [83] boost::arg<5>::arg()  [103] std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_Vector_impl::_Vector_impl() [73] void std::_Destroy<AaltoGames::DiagonalGMM*>(AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM*)
+  [84] boost::arg<6>::arg()  [104] std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_Vector_impl::~_Vector_impl() [126] void std::_Destroy<AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM>(AaltoGames::DiagonalGMM*, AaltoGames::DiagonalGMM*, std::allocator<AaltoGames::DiagonalGMM>&)
+  [85] boost::arg<7>::arg()  [105] std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_M_deallocate(AaltoGames::DiagonalGMM*, unsigned long) [34] void std::_Destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1>*>(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1>*)
+  [86] boost::arg<8>::arg()  [106] std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_M_get_Tp_allocator() [45] void std::_Destroy<Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1> >(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, Eigen::Matrix<float, -1, 1, 0, -1, 1>*, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >&)
+  [87] boost::arg<9>::arg()  [107] std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::_Vector_base() [74] void std::_Destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*>(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*)
+  [50] __gnu_cxx::new_allocator<AaltoGames::ControlPBP::MarginalSample>::deallocate(AaltoGames::ControlPBP::MarginalSample*, unsigned long) [108] std::_Vector_base<AaltoGames::DiagonalGMM, std::allocator<AaltoGames::DiagonalGMM> >::~_Vector_base() [127] void std::_Destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*, std::allocator<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >&)
+  [51] __gnu_cxx::new_allocator<AaltoGames::ControlPBP::MarginalSample>::new_allocator() [37] std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_Vector_impl::_Vector_impl() [75] void std::_Destroy<double*>(double*, double*)
+  [52] __gnu_cxx::new_allocator<AaltoGames::ControlPBP::MarginalSample>::~new_allocator() [41] std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_Vector_impl::~_Vector_impl() [128] void std::_Destroy<double*, double>(double*, double*, std::allocator<double>&)
+  [88] __gnu_cxx::new_allocator<AaltoGames::DiagonalGMM>::deallocate(AaltoGames::DiagonalGMM*, unsigned long) [42] std::_Vector_base<Eigen::Matrix<float, -1, 1, 0, -1, 1>, std::allocator<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::_M_deallocate(Eigen::Matrix<float, -1, 1, 0, -1, 1>*, unsigned long) [67] void std::_Destroy<std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> > >(std::vector<AaltoGames::ControlPBP::MarginalSample, std::allocator<AaltoGames::ControlPBP::MarginalSample> >*)
